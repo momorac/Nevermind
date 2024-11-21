@@ -39,3 +39,4 @@
 
 ## 4. 비주얼 및 영상
 https://www.youtube.com/watch?v=9vdp6t62SyQ
+[![Video Label](http://img.youtube.com/vi/9vdp6t62SyQ?si=gywoEI1oOBBjH_8x/0.jpg)](https://youtu.be/9vdp6t62SyQ?si=gywoEI1oOBBjH_8x)
