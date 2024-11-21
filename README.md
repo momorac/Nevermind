@@ -30,6 +30,13 @@
 
 
 ## 2. 기술 스택 및 구현
+- `Unity 3D`, `C#`,  `Cinema4D`
+
+### 2-1. 메인 씬 구현
+
+### 2-2. 퍼즐 씬 구현
+
+### 2-3. 엔딩 씬 구현
 
 <br/>
 
@@ -39,4 +46,3 @@
 
 ## 4. 비주얼 및 영상
 https://www.youtube.com/watch?v=9vdp6t62SyQ
-[![Video Label](http://img.youtube.com/vi/9vdp6t62SyQ?si=gywoEI1oOBBjH_8x/0.jpg)](https://youtu.be/9vdp6t62SyQ?si=gywoEI1oOBBjH_8x)
