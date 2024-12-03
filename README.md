@@ -42,6 +42,7 @@
 
 
 ### 2-1. 메인 씬 구현
+<img src = "https://private-user-images.githubusercontent.com/149387578/391823420-174c40c3-8c72-4b5c-8d41-91015aa3b334.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMyMDM4MDUsIm5iZiI6MTczMzIwMzUwNSwicGF0aCI6Ii8xNDkzODc1NzgvMzkxODIzNDIwLTE3NGM0MGMzLThjNzItNGI1Yy04ZDQxLTkxMDE1YWEzYjMzNC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjAzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIwM1QwNTI1MDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yOGNhNjQ3MmQ5YTdiN2Q4YmRhMjA2ODFiMTllYzFmODgwNWFmZjZlMmQ4ZGU4ZGRhOWZjNWJlZTY4NTA4ZTE3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.HxuVcb16x7E7IbUpVlDtxmzFKHHWRDaC_fViswlH57M">
 
 1. **메인 게임 진행 : 플레이어는 캐릭터를 조작해 얼음 수정들을 부시고, 그에 따라 해금되는 가로등 수리 퍼즐을 풀어야 한다.**
     - 메인 게임과 퍼즐 게임 사이를 오가며 플레이하며, 메인 게임에서의 스탯들을 저장해야 하기 때문에, MainScene에서
