@@ -30,9 +30,38 @@
 
 
 ## 2. 기술 스택 및 구현
-- `Unity 3D`, `C#`,  `Cinema4D`
+**사용 기술**
+- Unity Engine
+- Coroutine
+- Unity Cinemachine
+- Unity AI NavMesh
+- Unity Animator & Timeline
+- Obi Physics Engine
+- DOTween
+- Singleton Pattern
+
 
 ### 2-1. 메인 씬 구현
+
+1. **메인 게임 진행 : 플레이어는 캐릭터를 조작해 얼음 수정들을 부시고, 그에 따라 해금되는 가로등 수리 퍼즐을 풀어야 한다.**
+    - 메인 게임과 퍼즐 게임 사이를 오가며 플레이하며, 메인 게임에서의 스탯들을 저장해야 하기 때문에, MainScene에서
+    GameManager의 변수들을 static으로 관리하였다.
+
+2. **플레이어블 캐릭터 조작**
+    - 행성의 중심방향으로 중력이 작용하기 때문에, rigidbody의 중력을 사용하지 않고, **가상의 Gravity Attracter와 Body** 스크립트를 만들어서 사용
+    - Idle, Walk, Jump, Spin, Attack을 상태로 가지는 animator를 통해 캐릭터 모션 컨트롤
+    
+    ‼️캐릭터를 중심으로 카메라 시점이 전환되기 때문에 y축 시점 회전 시 캐릭터가 제자리에서 미끄러지듯이 어색하게 보이는 문제 발생
+    <br>
+    → avatar mask 설정하여 animator에서 Bottom Layer 추가, 마우스 회전 입력 시 제자리에서 걸음하는 애니메이션을 override하여 자연스럽게 모션 수정
+    
+
+3. **오브젝트 상호작용**
+    1. **Crystal** : Collider 기반으로 `CrystalDestroter`스크립트에서 충돌 감지 및 파괴 액션 수행
+    2. **Spark** : `SparkSpawner.cs`에서 랜덤하게 주기적으로 에너미 캐릭터 *스파크* 생성, `CrystalDestroyer.cs` 에서 랜덤 이벤트로 에너미 캐릭터 생성
+        - 에너미 생성 시 UI 기반으로 에너미 캐릭터의 말풍선 생성
+    3. **Light** : 
+    4. **Moon** : 달은 플레이어의 진행을 도와주는 캐릭터로,
 
 ### 2-2. 퍼즐 씬 구현
 
