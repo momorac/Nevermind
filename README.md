@@ -81,7 +81,7 @@
     - Avatar Mask를 통해 Plug를 잡고 있는 상반신의 모션 구현
 
 3. **Plug와 연결된 전선을 Fuze 오브젝트에 접촉**
-    - 파티클 기반 **Obi Physic Engine의 Rope Engine을 사용**해 전선의 움직임 구현
+    - 파티클 기반 [**Obi Physic Engine**](https://obi.virtualmethodstudio.com)의 **Obi Rope**를 사용해 전선의 움직임 구현
     - Obi Engine의 자체 Collider와 Surface를 이용해 전선과 퓨즈의 접촉 상태 감지
 
 4. **접촉된 상태에서 Console 오브젝트에 도착**
