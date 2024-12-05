@@ -1,5 +1,8 @@
 # Nevermind
 
+
+<br>
+
 ### INDEX
 &emsp;[1. 프로젝트 소개](#1-프로젝트-소개)
 
@@ -45,7 +48,7 @@
 
 
 ### 2-1. 메인 씬 구현
-<img src = "https://private-user-images.githubusercontent.com/149387578/391823420-174c40c3-8c72-4b5c-8d41-91015aa3b334.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMyOTY1MzAsIm5iZiI6MTczMzI5NjIzMCwicGF0aCI6Ii8xNDkzODc1NzgvMzkxODIzNDIwLTE3NGM0MGMzLThjNzItNGI1Yy04ZDQxLTkxMDE1YWEzYjMzNC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIwNFQwNzEwMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMGQ3ZWNmNDU5MjE4NmZhNWIzNDZlODdkNTVjMGI3OGRlN2ExMGJiZmI2MDQxYzBlYTllMmY1YWNiMmRiNjQ5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Knan_GbGy1Ic_U7KLtQiuioqLLmhCCiLYHY8Q4llU0A">
+<img src = "https://private-user-images.githubusercontent.com/149387578/391823420-174c40c3-8c72-4b5c-8d41-91015aa3b334.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMzNTc5NTIsIm5iZiI6MTczMzM1NzY1MiwicGF0aCI6Ii8xNDkzODc1NzgvMzkxODIzNDIwLTE3NGM0MGMzLThjNzItNGI1Yy04ZDQxLTkxMDE1YWEzYjMzNC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIwNVQwMDE0MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMzliZmQwZTI4NjIxYTk5MjYyZTViNzMwYTEzZGFmNGUwNGE4NDI1Yjk1MjdkZmRkZGM4YjgxNDAzNzg3MGNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.e1sG9JQQDURKaH7AE4401DE5AXLd3JhetzFWyLjU3T4">
 
 1. **메인 게임 진행 : 플레이어는 캐릭터를 조작해 얼음 수정들을 부시고, 그에 따라 해금되는 가로등 수리 퍼즐을 풀어야 한다.**
     - 여러 씬 사이에서 상태를 통합적으로 관리하기 위해, MainScene에서 **GameManager의 필드를 static으로 관리**하였다.
@@ -84,9 +87,17 @@
     - Cinemachine을 이용해 카메라 시점 전환 연출
 
 <br>
-<br>
 
 ### 2-3. 엔딩 씬 구현
+[Click to Watch](https://www.youtube.com/watch?v=9vdp6t62SyQ)
+
+**스크립트로 작성한 Animation Event와 Timeline을 복합적으로 사용하여 구현**
+
+- Cinemachine을 통해 총 4개의 씬에서의 카메라 연출 제어
+- Timeline을 통해 오브젝트 기본 애니메이션 제어
+- Skybox Material의 **Shader 코드에 접근**, DOTween을 이용해 자연스럽게 변화하는 하늘의 애니메이션 구현
+- 재귀 함수를 통해 CreditRoll 구현
+
 
 <br/>
 
@@ -95,4 +106,11 @@
 <br/>
 
 ## 4. 비주얼 및 영상
-https://www.youtube.com/watch?v=9vdp6t62SyQ
+#### 메인 컨셉 이미지
+<image src = "https://private-user-images.githubusercontent.com/149387578/392602590-419a268a-e024-45d8-b095-128244180b39.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMzNTc5NTIsIm5iZiI6MTczMzM1NzY1MiwicGF0aCI6Ii8xNDkzODc1NzgvMzkyNjAyNTkwLTQxOWEyNjhhLWUwMjQtNDVkOC1iMDk1LTEyODI0NDE4MGIzOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIwNVQwMDE0MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYjNkOWRmOWU2ZWYyNTVmOGRhNDg5ZWQxY2E0ODBmZGI3NGY3YmVkNmRlMGZhYjNjYjY4ZTYxYjNlYTY2MjE4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.PZmXMmk0DuByezQsLSWBtNG4DCW0EntabniQdJXLXok">
+
+#### 엔딩 시퀀스 비디오
+[Click to Watch](https://www.youtube.com/watch?v=9vdp6t62SyQ)
+<a href = "https://www.youtube.com/watch?v=9vdp6t62SyQ" target ="_black">
+<image src = "https://private-user-images.githubusercontent.com/149387578/392607552-0cf24456-da35-4836-ac4c-7f06f8596729.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMzNTgxMjYsIm5iZiI6MTczMzM1NzgyNiwicGF0aCI6Ii8xNDkzODc1NzgvMzkyNjA3NTUyLTBjZjI0NDU2LWRhMzUtNDgzNi1hYzRjLTdmMDZmODU5NjcyOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIwNVQwMDE3MDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04MDMxYjExMjU5OTFmMDA2YzcxNGNiZGY4YjVhMmY5NWU2ZmIwZGNmYTZkY2ZjZmFhMTE2MmQ2YmUxMmU3NTQ3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.3udItq6ThZ8TJhRrCarBKAvw-5JvNo_XDhK2IjIqJ3o">
+</image></a>
