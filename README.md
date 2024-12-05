@@ -105,6 +105,41 @@
 
 ## 3. 기획 의도 및 제작과정
 
+### 기획 의도
+**Menifesto : “내가 진정 하고싶은 이야기”란 ?** 
+- 많은 사람들이 답도 없는 문제에 대해 Over-Thinking하며 스스로를 상처입힌다.
+- 뾰족뾰족한 Over-Thinking이 아니라, 둥글게 생각하며 Oval-Thinking으로 스스로를 안아주기를 바란다.
+  
+<br>
+
+### 제작 과정
+#### 1. 기획 및 디자인
+- 1~2주차 : 기획 및 모티브 선정
+- 3주차 : 배경 이미지 스케치 및 게임 플로우 구상
+  <image src ="https://file.notion.so/f/f/e8b2a23a-986d-4a45-8ed3-ff45015f9488/e41bb0d4-3fd9-4399-ad31-e50e3d12f7d3/image.png?table=block&id=1534284e-2670-805e-80ac-d751899f4dd4&spaceId=e8b2a23a-986d-4a45-8ed3-ff45015f9488&expirationTimestamp=1733457600000&signature=sMFnMYx4Ryg7KGE-w7DStkNHJfR_mBkSPIwPzeH7j0Q&downloadName=image.png">
+- 4~6주차 : 캐릭터 디자인 및 모델링, 리깅
+  <image src ="https://file.notion.so/f/f/e8b2a23a-986d-4a45-8ed3-ff45015f9488/485a3661-8c8f-4ab6-927c-59e2e88d97a8/image.png?table=block&id=1534284e-2670-80af-a851-faa92fc75ff4&spaceId=e8b2a23a-986d-4a45-8ed3-ff45015f9488&expirationTimestamp=1733457600000&signature=_J_iHiEkCWbhqMbCjkcECMCdvNtXWhO3gxoyC7lfolU&downloadName=image.png">
+
+#### 2. 개발
+- 7~8주차 : 인게임 행성 중력 및 캐릭터 움직임 구현
+  
+- 9주차 : 배경 오브젝트 모델링 및 배치, Particle 기반 오브젝트 구현
+- 10주차 : 게임 시스템 구축 및 키비주얼 제작
+    - 플레이어 공격 스킬 구현 및 애니메이터 상태 구축
+    - 에너미 캐릭터 생성 및 움직임 구현
+    - 수정 파괴 구현
+- 11주차 
+    - 사용 가능한 아이템 구현
+    - HP, 스킬 쿨타임, 아이템 개수를 보여주는 UI 구현
+    - 효과음 추가 및 스크립트에서 제어
+- 12주차 : 게임 비주얼 리뉴얼 - 배경의 행성과 소품, 톤앤매너까지 다시 디자인 및 모델링, 배치 작업
+- 13~14주차
+    - UI 개편 및 아이템 사용 방식 변경
+    - 아이템 획득, 사용 시 캔버스 기반 이펙트 추가
+    - 튜토리얼 구현
+    - 컬러무드 수정
+
+
 <br/>
 
 ## 4. 비주얼 및 영상
